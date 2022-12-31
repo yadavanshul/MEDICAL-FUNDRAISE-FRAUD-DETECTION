@@ -1,0 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+
+body {
+    
+    font-family:"Open Sans", Helvetica, Arial, sans-serif;
+	font-weight:300;
+	font-size: 12px;
+	line-height:30px;
+	color: rgb(239, 31, 16);
+	background:rgb(255, 255, 255);
+	text-align: center;
+    /* background-image: url('https://static.toiimg.com/thumb/resizemode-4,width-1280,height-720,msid-93895474/93895474.jpg'); */
+}
+
+

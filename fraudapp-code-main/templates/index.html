@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detection App</title>
+    <!-- <link rel= "stylesheet" type= "text/css" href= "../static/styles/style.css"> -->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+
+</head>
+<body>
+    <div class="container">  
+        <form id="contact" action="/predict" method="POST">
+          <h3>Fundraise fraud detection</h3>
+          <h4>Using machine learning</h4>
+          <fieldset>
+            <input placeholder="Title of fundraiser" name="title" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Name of the fundraiser" name="poname" type="text" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Patient Name" type="text" name="paname" tabindex="3" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="State of the address" type="text" name="state" tabindex="4" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Tax Benefits" type="text" name="tax" tabindex="8" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Supporters" type="number" name="supporters" tabindex="7" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Amount needed" type="number" name="namount" tabindex="5" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Amount raised" type="number" name="ramount" tabindex="6" required>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Predict</button>
+          </fieldset>
+          
+        </form>
+       
+        
+      </div>  
+</body>
+</html>
